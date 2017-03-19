@@ -11,7 +11,7 @@ class BubbleSort
 
       @array.each do
          switch = 0
-         @array.map_with_index do |character, index|
+         @array.each_with_index do |character, index|
              break if index == (x-1)
             if character > @array[index + 1]
                  @array[index], @array[index +1] = @array[index +1], @array[index]
